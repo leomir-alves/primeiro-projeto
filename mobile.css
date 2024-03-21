@@ -1,0 +1,32 @@
+/*<div class="service">
+               
+            </div>
+            
+            
+              <div class="service">
+                
+               
+            </div>
+            
+            
+            
+            
+            
+            
+            .service{
+   border: 1px solid;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:flex-end;
+   gap: 10px;
+   
+}
+
+.service h3{
+    font-size: 2.5rem;
+}
+
+.service p{
+    font-size: 2rem;
+}*/

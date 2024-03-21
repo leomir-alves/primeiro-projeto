@@ -1,0 +1,171 @@
+
+html{
+    font-size: 62.5%;
+}
+
+/*grid*/
+
+body{
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:"header    header    header     header"
+                        "about     about     about      about"
+                        "services  services  services   services"
+                        "testemunhos testemunhos testemunhos testemunhos"
+                        "projecs      projecs    projecs      projecs"
+                        "footer       footer     footer       footer" ;
+}
+/*grid areas*/
+.header{
+    grid-area: header;   
+}
+.about{
+    grid-area: about;
+}
+.services{
+    grid-area: services;
+}
+.testemunhos{
+    grid-area: testemunhos;
+}
+.projecs{
+    grid-area: projecs;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+
+/*estilizando o header*/
+.header{
+    background: url(../images/desktop/image-header.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;    
+}
+
+.header nav ul{
+    display: flex;
+}
+.header nav ul li a{
+    padding: 10px 25px;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.header .contato{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 30px;
+}
+.header nav ul li a:hover{
+    background-color:hsl(51, 100%, 49%);
+    border-radius: 30px;
+   
+} 
+.header .title{
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.about .image{
+    width: 100%;
+    height: 100%;   
+}
+
+.about  .image-rigth{
+    background: url('../images/desktop/image-transform.jpg') center center no-repeat;
+    background-size: cover;
+}
+.about  .image-left{
+    background: url('../images/desktop/image-stand-out.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.about .about-info{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    
+}
+
+.about .about-info h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.about .about-info p{
+    margin: 20px 0;
+}
+
+.about .about-info a{
+    align-self: flex-start;
+    color: black;
+    font-weight: 700;
+}
+
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid;
+    height: 75vh;
+}
+
+.services .image-service{
+   width: 100%;
+   height: 100%;
+   align-items: flex-end;
+   border: 1px solid red;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.services .right{
+    background: url('../images/desktop/image-photography.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+
+.services .left{
+    background: url('../images/desktop/image-graphic-design.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.services .image-service .info{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
